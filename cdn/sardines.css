@@ -1,0 +1,105 @@
+.sardines {
+    transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+
+    animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -webkit-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    -ms-animation: spin 1s infinite linear;
+}
+
+.sardines {
+    -webkit-animation-duration: 1.8s;
+    -moz-animation-duration: 1.8s;
+    -o-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes sardine1 {
+    0%, 20%, 40%, 60%, 80%, 100% {-webkit-transform: translateY(0);}
+10%, 30%, 50%, 70%, 90% {-webkit-transform: translateY(-10px);}
+}
+
+@-moz-keyframes sardine1 {
+    0%, 20%, 40%, 60%, 80%, 100% {-moz-transform: translateY(0);}
+10%, 30%, 50%, 70%, 90% {-moz-transform: translateY(-10px);}
+}
+
+@-o-keyframes sardine1 {
+    0%, 20%, 40%, 60%, 80%, 100% {-o-transform: translateY(0);}
+10%, 30%, 50%, 70%, 90% {-o-transform: translateY(-10px);}
+}
+
+@keyframes sardine1 {
+    0%, 20%, 40%, 60%, 80%, 100% {transform: translateY(0);}
+10%, 30%, 50%, 70%, 90% {transform: translateY(-10px);}
+}
+
+.sardine1 {
+    -webkit-animation-name: sardine1;
+    -moz-animation-name: sardine1;
+    -o-animation-name: sardine1;
+    animation-name: sardine1;
+}
+
+@-webkit-keyframes sardine2 {
+    1%, 21%, 41%, 61%, 81% {-webkit-transform: translateY(0);}
+11%, 31%, 51%, 71%, 91% {-webkit-transform: translateY(-20px);}
+}
+
+@-moz-keyframes sardine2 {
+    1%, 21%, 41%, 61%, 81% {-moz-transform: translateY(0);}
+11%, 31%, 51%, 71%, 91% {-moz-transform: translateY(-20px);}
+}
+
+@-o-keyframes sardine2 {
+    1%, 21%, 41%, 61%, 81% {-o-transform: translateY(0);}
+11%, 31%, 51%, 71%, 91% {-o-transform: translateY(-20px);}
+}
+
+@keyframes sardine2 {
+    1%, 21%, 41%, 61%, 81% {transform: translateY(0);}
+11%, 31%, 51%, 71%, 91% {transform: translateY(-20px);}
+}
+
+.sardine2 {
+    -webkit-animation-name: sardine2;
+    -moz-animation-name: sardine2;
+    -o-animation-name: sardine2;
+    animation-name: sardine2;
+}
+
+@-webkit-keyframes sardine3 {
+    19%, 39%, 59%, 79%, 99% {-webkit-transform: translateY(0);}
+9%, 29%, 49%, 69%, 89% {-webkit-transform: translateY(-30px);}
+}
+
+@-moz-keyframes sardine3 {
+    19%, 39%, 59%, 79%, 99% {-moz-transform: translateY(0);}
+9%, 29%, 49%, 69%, 89% {-moz-transform: translateY(-30px);}
+}
+
+@-o-keyframes sardine3 {
+    19%, 39%, 59%, 79%, 99% {-o-transform: translateY(0);}
+9%, 29%, 49%, 69%, 89% {-o-transform: translateY(-30px);}
+}
+
+@keyframes sardine3 {
+    19%, 39%, 59%, 79%, 99% {transform: translateY(0);}
+9%, 29%, 49%, 69%, 89% {transform: translateY(-30px);}
+}
+ 
+.sardine3 {
+    -webkit-animation-name: sardine3;
+    -moz-animation-name: sardine3;
+    -o-animation-name: sardine3;
+    animation-name: sardine3;
+}
