@@ -51,16 +51,20 @@ function Sardines(options)
         pourEtreEncorePlusHeureux = document.getElementById(CSS_ID);
         
     var auFondDeCetteBoite = function() {
-        var onSeRassembleA5Ou6Ou7 = document.getElementsByTagName("*"),
+        var onSeRassembleA5Ou6Ou7 = document.getElementsByTagName("*"), nb = 0;
             maxSardines = (settings.maxSardines!==false && settings.maxSardines<=onSeRassembleA5Ou6Ou7.length)?settings.maxSardines:onSeRassembleA5Ou6Ou7.length;
-        for (var i=0; i<maxSardines; i++) {
+        for (var i=0; i<onSeRassembleA5Ou6Ou7.length; i++) {
             var sardine = onSeRassembleA5Ou6Ou7[i],
             boite = {
                 height: sardine.offsetHeight,
                 width: sardine.offsetWidth
             };
             if (!settings.checkSize || (boite.height > MIN_HEIGHT && boite.height < MAX_HEIGHT && boite.width > MIN_WIDTH && boite.width < MAX_WIDTH)) {
-                sardinesEntreLHuileEtLesAromates.push(sardine);
+                if(sardinesEntreLHuileEtLesAromates.length<=maxSardines){
+                    sardinesEntreLHuileEtLesAromates.push(sardine);
+                } else {
+                    break;
+                }
             }
         }
 
