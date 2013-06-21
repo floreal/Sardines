@@ -2,7 +2,7 @@
  *
  *  "On se resserre, et maintenant qu'on l'a connaît, on va chanter la chanson des sardines ! Attention ! Allez !"
  *
- *  Version   : 0.2.1
+ *  Version   : 0.2.3
  *  Date      : 2013-06-21
  *  Author    : Pascal RONDON
  *  Contact   : ark@arkdev.fr
@@ -41,7 +41,7 @@ function Sardines(options)
 
     var defaults = {
         loop: true,
-        maxSardines: 10,
+        maxSardines: false,
         checkSize: true
     },
     settings = onSeResserre(defaults, options);
