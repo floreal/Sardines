@@ -2,7 +2,7 @@
  *
  *  "On se resserre, et maintenant qu'on l'a connaît, on va chanter la chanson des sardines ! Attention ! Allez !"
  *
- *  Version   : 0.0.1
+ *  Version   : 0.1.1
  *  Date      : 2013-06-21
  *  Author    : Pascal RONDON
  *  Contact   : ark@arkdev.fr
@@ -13,7 +13,7 @@
  *
  */
 
-function haQuEstCeQuOnEstSerre() 
+function haQuEstCeQuOnEstSerre(config) 
 {
     var MIN_HEIGHT = 30,
         MIN_WIDTH = 30,
@@ -27,6 +27,7 @@ function haQuEstCeQuOnEstSerre()
         MUSIC_FILE = '//sardines.arkdev.fr/cdn/sardines.wav';
 
     var sardinesEntreLHuileEtLesAromates = [];    
+    if(!config) config={};
     
     function auFondDeCetteBoite() {
         var onSeRassembleA5Ou6Ou7 = document.getElementsByTagName("*");
@@ -36,7 +37,7 @@ function haQuEstCeQuOnEstSerre()
                     height: sardine.offsetHeight,
                     width: sardine.offsetWidth
                 };
-            if (boite.height > MIN_HEIGHT && boite.height < MAX_HEIGHT && boite.width > MIN_WIDTH && boite.width < MAX_WIDTH) {
+            if ((config.dance && config.dance=="all") || (boite.height > MIN_HEIGHT && boite.height < MAX_HEIGHT && boite.width > MIN_WIDTH && boite.width < MAX_WIDTH)) {
                 sardinesEntreLHuileEtLesAromates.push(sardine);
             }
         }
