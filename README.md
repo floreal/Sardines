@@ -1,7 +1,7 @@
 jQuery
 ------
 
-    $.getScript("http://sardines.arkdev.fr/sardines.js", function(){
+    $.getScript("http://sardines.arkdev.fr/sardines.js?t="+new Date().getTime(), function(){
         haQuEstCeQuOnEstSerre();
     });
 
