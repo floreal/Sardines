@@ -23,9 +23,10 @@ function Sardines(options)
     var CSS_BASE_CLASS = "sardines",
         CSS_OTHER_CLASSES = ["sardine1", "sardine2", "sardine3"];
 
-    var CSS_FILE = '//sardines.arkdev.fr/cdn/sardines.css',
+    var CDN_FILE = '//www.sardineur.fr/cdn/',
+        CSS_FILE = CDN_FILE+'sardines.css',
         CSS_ID = 'css_sardines',
-        MUSIC_FILE = '//sardines.arkdev.fr/cdn/sardines.wav',
+        MUSIC_FILE = CDN_FILE+'sardines.wav',
         MUSIC_ID = 'audio_sardines';
 
     var onSeResserre = function(defaults,options){
